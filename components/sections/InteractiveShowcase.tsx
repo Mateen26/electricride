@@ -10,12 +10,14 @@ export default function InteractiveShowcase() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [{ x, y }, set] = useState({ x: 0, y: 0 });
 
-  const bind = useMove(({ xy: [px, py], boundingBox }) => {
-    if (boundingBox) {
-      const cx = boundingBox.left + boundingBox.width / 2;
-      const cy = boundingBox.top + boundingBox.height / 2;
-      const normalizedX = (px - cx) / (boundingBox.width / 2);
-      const normalizedY = (py - cy) / (boundingBox.height / 2);
+  const bind = useMove(({ xy: [px, py], event }) => {
+    const target = (event.currentTarget || event.target) as Element;
+    if (target && target.getBoundingClientRect) {
+      const bounds = target.getBoundingClientRect();
+      const cx = bounds.left + bounds.width / 2;
+      const cy = bounds.top + bounds.height / 2;
+      const normalizedX = (px - cx) / (bounds.width / 2);
+      const normalizedY = (py - cy) / (bounds.height / 2);
       set({ x: normalizedX * 30, y: normalizedY * 30 }); 
     }
   });
