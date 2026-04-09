@@ -84,7 +84,7 @@ export default function GlobalScootersOverlay() {
   if (!mounted) return null;
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-40 overflow-hidden perspective-1000">
+    <div className="hidden md:block fixed inset-0 pointer-events-none z-40 overflow-hidden perspective-1000">
       
       {/* LEFT SCOOTER - Side View */}
       <motion.div

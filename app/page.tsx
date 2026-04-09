@@ -1,5 +1,6 @@
 import Navbar from "@/components/ui/Navbar";
 import GlobalScootersOverlay from "@/components/sections/GlobalScootersOverlay";
+import MobileScooterOverlay from "@/components/sections/MobileScooterOverlay";
 import Hero from "@/components/sections/Hero";
 import Performance from "@/components/sections/Performance";
 import Design from "@/components/sections/Design";
@@ -13,6 +14,7 @@ export default function Home() {
     <main className="relative bg-dark-obsidian selection:bg-electric-neon selection:text-black">
       {/* The Global Overlay controlling the travelling scooters */}
       <GlobalScootersOverlay />
+      <MobileScooterOverlay />
 
       <Navbar />
 

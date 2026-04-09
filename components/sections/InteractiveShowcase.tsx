@@ -76,7 +76,7 @@ export default function InteractiveShowcase() {
         </div>
 
         <div 
-          className="w-full lg:w-2/3 h-[500px] md:h-[700px] relative perspective-1000 origin-center"
+          className="w-full lg:w-2/3 h-[350px] md:h-[700px] relative perspective-1000 origin-center mt-8 md:mt-0"
           {...bind()}
         >
           <motion.div

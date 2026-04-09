@@ -24,7 +24,7 @@ export default function Hero() {
       />
 
       {/* Main Content Area */}
-      <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
+      <div className="absolute inset-0 z-10 flex items-start pt-[15vh] md:items-center md:pt-0 justify-center pointer-events-none">
         
         {/* Center Data & Titles */}
         <motion.div 
