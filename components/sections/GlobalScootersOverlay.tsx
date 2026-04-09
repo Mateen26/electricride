@@ -86,51 +86,65 @@ export default function GlobalScootersOverlay() {
   return (
     <div className="hidden md:block fixed inset-0 pointer-events-none z-40 overflow-hidden perspective-1000">
       
-      {/* LEFT SCOOTER - Side View */}
+      {/* LEFT SCOOTER - Side View - Slides in from right on load */}
       <motion.div
-        style={{
-          x: leftX,
-          y: leftY,
-          scale: leftScale,
-          rotateY: leftRotateY,
-          opacity: leftOpacity,
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transformStyle: "preserve-3d" 
-        }}
-        className="w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center transform-gpu origin-center"
+        initial={{ x: "40vw", opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+        className="absolute inset-0 z-10"
       >
-        <Image 
-          src="/images/withoutbg2 copy.png" 
-          alt="Scooter Travelling" 
-          fill
-          className="object-contain drop-shadow-[0_40px_40px_rgba(0,0,0,0.9)]"
-          priority
-        />
+        <motion.div
+          style={{
+            x: leftX,
+            y: leftY,
+            scale: leftScale,
+            rotateY: leftRotateY,
+            opacity: leftOpacity,
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transformStyle: "preserve-3d" 
+          }}
+          className="w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center transform-gpu origin-center"
+        >
+          <Image 
+            src="/images/withoutbg2 copy.png" 
+            alt="Scooter Travelling" 
+            fill
+            className="object-contain drop-shadow-[0_40px_40px_rgba(0,0,0,0.9)]"
+            priority
+          />
+        </motion.div>
       </motion.div>
 
-      {/* RIGHT SCOOTER - Front View */}
+      {/* RIGHT SCOOTER - Front View - Comes from far below on load */}
       <motion.div
-        style={{
-          x: rightX,
-          y: rightY,
-          scale: rightScale,
-          opacity: rightOpacity,
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transformStyle: "preserve-3d"
-        }}
-        className="w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center transform-gpu origin-center"
+        initial={{ y: "60vh", scale: 0.1, opacity: 0 }}
+        animate={{ y: 0, scale: 1, opacity: 1 }}
+        transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1] }}
+        className="absolute inset-0 z-20"
       >
-        <Image 
-          src="/images/withoutbg2 copy2.png" 
-          alt="Scooter Travelling 2" 
-          fill
-          className="object-contain drop-shadow-[0_40px_40px_rgba(0,0,0,0.9)]"
-          priority
-        />
+        <motion.div
+          style={{
+            x: rightX,
+            y: rightY,
+            scale: rightScale,
+            opacity: rightOpacity,
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transformStyle: "preserve-3d"
+          }}
+          className="w-[500px] h-[500px] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center transform-gpu origin-center"
+        >
+          <Image 
+            src="/images/withoutbg2 copy2.png" 
+            alt="Scooter Travelling 2" 
+            fill
+            className="object-contain drop-shadow-[0_40px_40px_rgba(0,0,0,0.9)]"
+            priority
+          />
+        </motion.div>
       </motion.div>
     </div>
   );

@@ -46,26 +46,33 @@ export default function MobileScooterOverlay() {
   return (
     <div className="block md:hidden fixed inset-0 pointer-events-none z-40 overflow-hidden perspective-1000">
       <motion.div
-        style={{
-          x,
-          y,
-          scale,
-          rotateY,
-          opacity,
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transformStyle: "preserve-3d"
-        }}
-        className="w-[280px] h-[280px] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center transform-gpu origin-center"
+        initial={{ y: "40vh", scale: 0.1, opacity: 0 }}
+        animate={{ y: 0, scale: 1, opacity: 1 }}
+        transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1] }}
+        className="absolute inset-0 z-20"
       >
-        <Image 
-          src="/images/withoutbg2 copy2.png" 
-          alt="Scooter Mobile" 
-          fill
-          className="object-contain drop-shadow-[0_20px_20px_rgba(0,0,0,0.9)]"
-          priority
-        />
+        <motion.div
+          style={{
+            x,
+            y,
+            scale,
+            rotateY,
+            opacity,
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transformStyle: "preserve-3d"
+          }}
+          className="w-[280px] h-[280px] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center transform-gpu origin-center"
+        >
+          <Image 
+            src="/images/withoutbg2 copy2.png" 
+            alt="Scooter Mobile" 
+            fill
+            className="object-contain drop-shadow-[0_20px_20px_rgba(0,0,0,0.9)]"
+            priority
+          />
+        </motion.div>
       </motion.div>
     </div>
   );
