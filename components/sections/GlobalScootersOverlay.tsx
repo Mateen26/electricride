@@ -24,7 +24,7 @@ export default function GlobalScootersOverlay() {
   const leftX = useTransform(
     scrollYProgress,
     [0, 0.08, 0.15, 0.22, 0.28, 0.35, 0.75],
-    ["-25vw", "-25vw", "-40vw", "-17vw", "-17vw", "0vw", "0vw"] 
+    ["-30vw", "-30vw", "-40vw", "-17vw", "-17vw", "0vw", "0vw"] 
   );
 
   const leftY = useTransform(
@@ -59,7 +59,7 @@ export default function GlobalScootersOverlay() {
   const rightX = useTransform(
     scrollYProgress,
     [0, 0.08, 0.12, 0.16, 0.20, 0.24, 0.28, 0.32],
-    ["25vw", "25vw", "18vw", "18vw", "18vw", "19vw", "19vw", "19vw"] 
+    ["30vw", "30vw", "18vw", "18vw", "18vw", "19vw", "19vw", "19vw"] 
   );
 
   const rightY = useTransform(
@@ -88,7 +88,7 @@ export default function GlobalScootersOverlay() {
       
       {/* LEFT SCOOTER - Side View - Slides in from right on load */}
       <motion.div
-        initial={{ x: "40vw", opacity: 0 }}
+        initial={{ x: "70vw", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
         className="absolute inset-0 z-10"
