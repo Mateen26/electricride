@@ -37,8 +37,8 @@ export default function MobileScooterOverlay() {
 
   const opacity = useTransform(
     scrollYProgress,
-    [0, 0.05, 0.25, 0.32, 0.35, 0.76, 0.78],
-    [1, 1, 1, 1, 1, 1, 0] 
+    [0, 0.69, 0.72, 1],
+    [1, 1, 0, 0] 
   );
 
   if (!mounted) return null;
