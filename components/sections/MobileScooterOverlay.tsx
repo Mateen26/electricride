@@ -13,13 +13,13 @@ export default function MobileScooterOverlay() {
   }, []);
 
   // ONLY THE FRONT-FACING SCOOTER is rendered here
-  const x = useTransform(scrollYProgress, [0, 1], ["0vw", "0vw"]); 
-  
+  const x = useTransform(scrollYProgress, [0, 1], ["0vw", "0vw"]);
+
   // y smoothly avoids the text. During the 0.35 - 0.75 sequence, it dodges text 1 (top), text 2 (bottom), text 3 (top)
   const y = useTransform(
     scrollYProgress,
-    [0, 0.08, 0.15, 0.25, 0.35, 0.43, 0.55, 0.67, 0.75],
-    ["30vh", "30vh", "25vh", "5vh", "0vh", "15vh", "-20vh", "15vh", "0vh"]
+    [0, 0.08, 0.15, 0.25, 0.35, 0.43, 0.55, 0.67, 1],
+    ["30vh", "30vh", "25vh", "5vh", "0vh", "15vh", "-20vh", "15vh", "15vh"]
   );
 
   const scale = useTransform(
@@ -32,13 +32,15 @@ export default function MobileScooterOverlay() {
   const rotateY = useTransform(
     scrollYProgress,
     [0, 1],
-    [0, 0] 
+    [0, 0]
   );
 
   const opacity = useTransform(
     scrollYProgress,
-    [0, 0.69, 0.72, 1],
-    [1, 1, 0, 0] 
+    // Safely fades to 0 while physically hidden behind the z-50 Engineering section
+    // so it doesn't pop out in the Battery section later!
+    [0, 0.70, 0.72, 1],
+    [1, 1, 0, 0]
   );
 
   if (!mounted) return null;
@@ -65,9 +67,9 @@ export default function MobileScooterOverlay() {
           }}
           className="w-[280px] h-[280px] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center transform-gpu origin-center"
         >
-          <Image 
-            src="/images/withoutbg2 copy2.png" 
-            alt="Scooter Mobile" 
+          <Image
+            src="/images/withoutbg2 copy2.png"
+            alt="Scooter Mobile"
             fill
             className="object-contain drop-shadow-[0_20px_20px_rgba(0,0,0,0.9)]"
             priority

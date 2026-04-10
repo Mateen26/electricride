@@ -38,7 +38,7 @@ export default function InteractiveShowcase() {
     <section 
       id="explore" 
       ref={containerRef} 
-      className="relative min-h-screen bg-dark-obsidian py-24 flex items-center justify-center overflow-hidden"
+      className="relative z-50 min-h-screen bg-dark-obsidian py-24 flex items-center justify-center overflow-hidden"
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(57,255,20,0.05)_0%,rgba(11,11,12,1)_70%)]" />
 
