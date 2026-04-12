@@ -19,20 +19,20 @@ export default function Performance() {
           className="space-y-8"
         >
           <h2 className="text-5xl md:text-7xl font-bold leading-tight">
-            Raw Power. <br/> <span className="text-electric-neon">Zero Emissions.</span>
+            Unleash the Power of <br/> <span className="text-electric-neon">Green Wave Volts.</span>
           </h2>
           <p className="text-zinc-400 text-lg md:text-xl">
-            Equipped with a next-generation magnetic levitation motor, the E-Ride X-1 delivers instant torque. We redesigned the drivetrain to minimize friction, maximizing efficiency to ungodly levels.
+            Our models feature a powerful 3000W motor, delivering exhilarating acceleration and a smooth ride, perfect for urban commuting or weekend adventures.
           </p>
           
           <div className="grid grid-cols-2 gap-8 pt-8 border-t border-white/10">
             <div>
-              <p className="text-electric-neon text-sm font-bold tracking-widest uppercase mb-1">Max Speed</p>
-              <p className="text-4xl font-bold text-white">85 <span className="text-xl text-zinc-500">km/h</span></p>
+              <p className="text-electric-neon text-sm font-bold tracking-widest uppercase mb-1">Battery</p>
+              <p className="text-4xl font-bold text-white">72V <span className="text-xl text-zinc-500">23Ah</span></p>
             </div>
             <div>
-              <p className="text-electric-neon text-sm font-bold tracking-widest uppercase mb-1">Peak Power</p>
-              <p className="text-4xl font-bold text-white">4500 <span className="text-xl text-zinc-500">W</span></p>
+              <p className="text-electric-neon text-sm font-bold tracking-widest uppercase mb-1">Motor</p>
+              <p className="text-4xl font-bold text-white">3000 <span className="text-xl text-zinc-500">W</span></p>
             </div>
           </div>
         </motion.div>

@@ -19,7 +19,7 @@ export default function Footer() {
               <div className="p-2 rounded-xl bg-electric-neon text-black group-hover:shadow-[0_0_20px_rgba(57,255,20,0.5)] transition-all">
                 <Zap size={24} className="fill-black" />
               </div>
-              <span className="text-3xl font-bold tracking-widest uppercase text-white">E-Ride</span>
+              <span className="text-3xl font-bold tracking-widest uppercase text-white">GWV.EV</span>
             </Link>
             <p className="text-zinc-400 text-lg max-w-md mb-8">
               Changing the way the world moves. One charge, one exhilarating ride at a time.
@@ -61,7 +61,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col md:flex-row items-center justify-between pt-10 border-t border-white/10 relative z-10">
-           <p className="text-zinc-500 font-medium">© 2026 E-Ride Motors Inc. All rights reserved.</p>
+           <p className="text-zinc-500 font-medium">© 2026 GWV.EV Motors - Green Wave Volts. All rights reserved.</p>
            <div className="flex items-center gap-6 mt-6 md:mt-0">
              <a href="#" className="text-zinc-500 hover:text-white transition-colors"><Twitter size={24} /></a>
              <a href="#" className="text-zinc-500 hover:text-white transition-colors"><Instagram size={24} /></a>

@@ -12,23 +12,23 @@ export default function Charging() {
            <motion.div initial={{ opacity: 0, scale: 0.8 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}>
              <BatteryCharging className="w-16 h-16 text-electric-neon mx-auto mb-6" />
            </motion.div>
-           <motion.h2 
-             initial={{ opacity: 0, y: 30 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             viewport={{ once: true }}
-             className="text-4xl md:text-6xl font-bold mb-6"
-           >
-             Refuel in <span className="text-electric-neon text-glow">Minutes.</span>
-           </motion.h2>
-           <motion.p 
-             initial={{ opacity: 0, y: 30 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             viewport={{ once: true }}
-             transition={{ delay: 0.1 }}
-             className="text-xl text-zinc-400"
-           >
-             Our advanced solid-state battery architecture allows for ultra-fast charging without degrading battery health. Go from 0 to 80% while you grab a coffee.
-           </motion.p>
+            <motion.h2 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-4xl md:text-6xl font-bold mb-6"
+            >
+              Join the <span className="text-electric-neon text-glow">Electric Revolution.</span>
+            </motion.h2>
+            <motion.p 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="text-xl text-zinc-400"
+            >
+              Experience the thrill of electric riding with our state-of-the-art EV motorcycles. Embrace sustainability without compromising on power or style. Explore our range and elevate your ride today.
+            </motion.p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

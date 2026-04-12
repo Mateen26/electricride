@@ -33,24 +33,25 @@ export default function Hero() {
         >
           <motion.div 
             initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }}
-            className="flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-2 rounded-full mb-6"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-electric-neon/30 bg-electric-neon/5 mb-6"
           >
-            <Zap size={16} className="text-electric-neon" />
-            <span className="text-zinc-300 text-sm font-semibold tracking-wider">NEW 2026 EDITION</span>
+            <Zap className="w-4 h-4 text-electric-neon" />
+            <span className="text-sm font-medium tracking-wider text-zinc-300 uppercase">Discover the Future of Riding</span>
           </motion.div>
 
           <motion.h1 
-            initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-[4rem] md:text-7xl lg:text-[8rem] font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-zinc-500 leading-none mb-6"
+            initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-5xl md:text-8xl font-black mb-6 tracking-tighter"
           >
-            X-1 PRO
+            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/40">GWV.EV</span>
+            <span className="text-zinc-500 block md:inline md:ml-4">Motorcycles</span>
           </motion.h1>
 
           <motion.p 
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-zinc-400 mb-8"
+            className="text-lg md:text-xl text-zinc-400 max-w-xl mx-auto mb-10 leading-relaxed"
           >
-            The pinnacle of electric mobility. Relentless acceleration meets uncompromised precision. Pre-order fully unlocked.
+            Experience the thrill of electric riding with our cutting-edge EV motorcycles. Unleash the power of Green Wave Volts electric innovation designed for both performance and efficiency.
           </motion.p>
 
           <motion.div 

@@ -34,12 +34,12 @@ export default function Design() {
           viewport={{ once: true }}
           className="flex-1 w-full text-center pt-[250px] md:pt-[450px] pb-10"
         >
-           <h3 className="text-3xl md:text-5xl font-bold mb-6 text-white">Aerospace Frame</h3>
+           <h3 className="text-3xl md:text-5xl font-bold mb-6 text-white">Aluminum Wheel Hub</h3>
            <p className="text-zinc-400 text-lg mb-6 leading-relaxed">
-             Ultra light, hyper strong. Engineered for maximum agility. Our advanced die-cast titanium chassis eliminates redundant joints, significantly reducing overall mass while offering peak structural rigidity.
+             Lightweight yet durable, offering enhanced responsiveness and reduced weight for significantly better handling.
            </p>
            <p className="text-zinc-400 text-md leading-relaxed">
-             Every millimeter is strictly optimized to lower the center of gravity. This translates to an incredibly planted feel, keeping you glued to the asphalt when attacking sharp apexes at high speeds.
+             Engineered for stability and grip, our 120/70-12 front and rear tires ensure a safe and comfortable ride consistently on various terrains.
            </p>
         </motion.div>
         
@@ -51,12 +51,12 @@ export default function Design() {
           transition={{ delay: 0.2 }}
           className="flex-1 w-full text-center pt-[100px] md:pt-[450px] pb-10"
         >
-           <h3 className="text-3xl md:text-5xl font-bold mb-6 text-white">Matte Obsidian</h3>
+           <h3 className="text-3xl md:text-5xl font-bold mb-6 text-white">LCD Instrument Panel</h3>
            <p className="text-zinc-400 text-lg mb-6 leading-relaxed">
-             A sleek finish that absorbs light and turns heads. Meticulously sprayed with an anti-scratch, hydro-phobic ceramic coating, the X-1 stays pristine regardless of the environment or weather conditions.
+             Stay securely informed with a sleek, easy-to-read centralized display that provides real-time information on speed, battery life, and more.
            </p>
            <p className="text-zinc-400 text-md leading-relaxed">
-             The deep obsidian palette is offset by laser-cut neon accents and striking geometrics, creating an imposing presence that undeniably commands the streets.
+             Experience superior shock absorption and handling paired with our hydraulic front fork, ensuring a completely smooth ride even on rough roads.
            </p>
         </motion.div>
       </div>

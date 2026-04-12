@@ -41,7 +41,7 @@ export default function Navbar() {
             <div className="p-2 rounded-xl bg-electric-neon/10 text-electric-neon group-hover:bg-electric-neon/20 transition-colors">
               <Zap size={24} className="fill-electric-neon/50" />
             </div>
-            <span className="text-xl font-bold tracking-widest uppercase">E-Ride</span>
+            <span className="text-xl font-bold tracking-widest uppercase">GWV.EV</span>
           </Link>
 
           {/* Desktop Nav */}

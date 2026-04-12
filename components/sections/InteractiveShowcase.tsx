@@ -53,7 +53,7 @@ export default function InteractiveShowcase() {
             viewport={{ once: true, margin: "-100px" }}
             className="text-4xl md:text-6xl font-bold leading-tight"
           >
-            Engineering <br/> <span className="text-electric-neon">Unleashed.</span>
+            Green Wave <br/> <span className="text-electric-neon">Innovation.</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, x: -50 }}
@@ -62,7 +62,7 @@ export default function InteractiveShowcase() {
             transition={{ delay: 0.2 }}
             className="text-zinc-400 text-lg md:text-xl font-light"
           >
-            Explore every angle of perfection. Using hyper-lightweight aerospace alloys and an aggressive chassis design, the E-Ride X-1 moves as fiercely as it looks. Hover to inspect aerodynamics.
+            Experience every angle of electric perfection. Engineered with high-performance components and an aggressive chassis design, the GWV.EV moves as fiercely as it looks. Hover to inspect.
           </motion.p>
 
           <div className="grid grid-cols-2 gap-6 pt-4">
