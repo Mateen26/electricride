@@ -21,7 +21,7 @@ export default function Design() {
           transition={{ delay: 0.1 }}
           className="text-xl text-zinc-400 max-w-2xl mx-auto"
         >
-          Unapologetic design. Sharp geometric lines paired with a minimal silhouette to cut through the wind and through the noise.
+          Superior engineering meets iconic design. Green Wave Volts redefining the electric experience with a silhouette built for performance and sustainability.
         </motion.p>
       </div>
 
