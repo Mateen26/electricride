@@ -8,8 +8,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Electric Ride | Future of Mobility",
-  description: "Experience the ultimate electric scooter. Futuristic design, unmatched performance.",
+  title: "GWV.EV Motorcycles | The Future of Riding",
+  description: "Experience the thrill of electric riding with Green Wave Volts. High-performance 3000W EV motorcycles designed for power, efficiency, and sustainability.",
 };
 
 export default function RootLayout({
