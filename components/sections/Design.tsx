@@ -12,7 +12,7 @@ export default function Design() {
           viewport={{ once: true }}
           className="text-5xl md:text-7xl font-bold mb-4"
         >
-          Forged in <span className="text-zinc-500">Titanium.</span>
+          Mastered by <span className="text-zinc-500">Innovation.</span>
         </motion.h2>
         <motion.p 
           initial={{ opacity: 0, y: 50 }}
